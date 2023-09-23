@@ -30,7 +30,7 @@ public class UserServiceImplementation implements IUserService {
                 if (Objects.isNull(user)) {
                     iUserDao.save(getUserFromMap(requestMap));
 
-                    return CafeUtils.getResponseEntity("Successfully Registered.", HttpStatus.OK);
+                    return CafeUtils.getResponseEntity("Successfully Registered..", HttpStatus.OK);
                 } else {
                     return CafeUtils.getResponseEntity("Email already exist", HttpStatus.BAD_REQUEST);
                 }
